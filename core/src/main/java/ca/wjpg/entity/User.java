@@ -1,4 +1,4 @@
-package ca.wfpg.entity;
+package ca.wjpg.entity;
 
 import javax.persistence.*;
 

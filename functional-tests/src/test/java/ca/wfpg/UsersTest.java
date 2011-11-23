@@ -1,4 +1,4 @@
-package ca.wfpg;
+package ca.wjpg;
 
 import com.meterware.httpunit.*;
 import org.codehaus.jackson.map.ObjectMapper;

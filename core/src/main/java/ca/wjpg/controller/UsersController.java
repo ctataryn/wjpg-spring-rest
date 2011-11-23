@@ -1,6 +1,6 @@
-package ca.wfpg.controller;
+package ca.wjpg.controller;
 
-import ca.wfpg.entity.User;
+import ca.wjpg.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
