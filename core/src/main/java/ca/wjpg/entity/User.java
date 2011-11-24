@@ -1,7 +1,11 @@
 package ca.wjpg.entity;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
+/* TODO If you want User to be serialized as XML, uncomment this Annotation
+@XmlRootElement
+ */
 @Entity
 public class User {
 

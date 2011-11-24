@@ -36,10 +36,6 @@ public class UsersController {
         return user;
     }
 
-    /**
-     * Get all users
-     * @return
-     */
     @RequestMapping(value = "/users", method = RequestMethod.GET)
 	public @ResponseBody List<User> getAll() {
         logger.info("Fetching all users");
@@ -47,6 +43,20 @@ public class UsersController {
         logger.info("Found users: {}", users);
         return users;
     }
+    
+    /**
+     * TODO If you want an XML Response for getAll:
+     * @return a stupid container for Users because JAXB can't serialize List
+     *
+    @RequestMapping(value = "/users", method = RequestMethod.GET)
+	public @ResponseBody UserList getAll() {
+        logger.info("Fetching all users");
+        List<User> users = em.createQuery("select u from User u", User.class).getResultList();
+        logger.info("Found users: {}", users);
+        UserList returnVal = new UserList(users);
+        return returnVal;
+    }
+    */
 
     @RequestMapping(value = "/users", method = RequestMethod.POST)
     public @ResponseBody User create(User user) {
