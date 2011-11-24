@@ -154,6 +154,5 @@
   <modules>
     <module>webapp</module>
     <module>core</module>
-    <module>functional-tests</module>
   </modules>
 </project>
